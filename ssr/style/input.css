@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom shape for the navbar */
+.custom-navbar-shape {
+  border-radius: 0 0 60px 60px; /* Adjust to match the Figma design */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Custom shadow for navbar */
+.shadow-custom-navbar {
+  box-shadow:
+    0 9px 19.5px rgba(0, 0, 0, 0.1),
+    0 35.25px 35.25px rgba(0, 0, 0, 0.09),
+    0 78.75px 47.25px rgba(0, 0, 0, 0.05),
+    0 140.25px 56.25px rgba(0, 0, 0, 0.01),
+    0 219px 61.5px rgba(0, 0, 0, 0);
+}
