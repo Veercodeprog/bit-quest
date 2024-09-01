@@ -7,12 +7,13 @@ pub mod fileserv;
 pub mod page {
     pub mod about;
     pub mod home;
+    pub mod web3;
 }
 
 // Expose the HomePage and AboutPage components
 pub use page::about::AboutPage;
 pub use page::home::HomePage;
-
+pub use page::web3::Web3Notes;
 #[cfg(feature = "hydrate")]
 #[wasm_bindgen::prelude::wasm_bindgen]
 pub fn hydrate() {

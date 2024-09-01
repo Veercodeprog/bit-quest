@@ -1,6 +1,7 @@
 use crate::error_template::{AppError, ErrorTemplate};
 use crate::page::about::AboutPage;
 use crate::page::home::HomePage;
+use crate::page::web3::Web3Notes;
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
@@ -29,6 +30,7 @@ pub fn App() -> impl IntoView {
               <Routes>
                     <Route path="" view=HomePage/>
                     <Route path="about" view=AboutPage/>
+        <Route path="web3" view=Web3Notes/>
                 </Routes>
             </main>
         </Router>
