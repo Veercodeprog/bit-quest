@@ -1,14 +1,10 @@
 use leptos::*;
 
 #[component]
-fn Header(cx: Scope) -> impl IntoView {
+pub fn Header(cx: Scope) -> impl IntoView {
     view! { cx,
-        <header>
-            <h1>"My Leptos App"</h1>
-            <nav>
-                <a href="/">"Home"</a>
-                <a href="/about">"About"</a>
-            </nav>
+        <header class="p-4 text-xl text-center text-white bg-blue-800 font-roboto">
+            <h1>{ "Learn HTML, CSS, and JavaScript from Scratch" }</h1>
         </header>
     }
 }
